@@ -1,0 +1,57 @@
+html {
+    font-size: 14px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    font-weight: normal;
+    background: var(--surface-ground);
+    color: var(--text-color);
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+/*
+.emoji {
+    position: absolute;
+    bottom: 100px;
+    left: 43%;
+    margin: auto;
+    transform: translateX(-50%);
+    z-index: 10;
+}*/
+.emoji {
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    margin: auto;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.emoji {
+    font-size: 64px;
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
