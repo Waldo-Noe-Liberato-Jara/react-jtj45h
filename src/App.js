@@ -47,7 +47,7 @@ export default function BasicDemo() {
             .then((data) => {
                 setNombres(data.razonSocial);
                 setApellidos(data.direccion);
-                if (data?.success == false) {
+                if (data?.success === false) {
                     setEstado(false);
                     setNombres('');
                     setApellidos('');
